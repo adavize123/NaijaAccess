@@ -1,0 +1,50 @@
+name: Accessibility scan
+
+on:
+  schedule:
+    # 03:00 UTC, which is 04:00 Lagos time
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx playwright install chromium --with-deps
+
+      - name: Scan targets
+        run: npm run scan
+
+      - name: Commit results
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add data/scan-results.json
+          if git diff --staged --quiet; then
+            echo "No change in scan results"
+          else
+            git commit -m "Update scan results for $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results-${{ github.run_number }}
+          path: data/scan-results.json
+          retention-days: 30

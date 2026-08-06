@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      # The dashboard must pass the same checks it applies to everyone else.
+      - name: Install browser
+        run: npx playwright install chromium --with-deps
+
+      - name: Self accessibility audit
+        run: |
+          npm start &
+          npx wait-on http://localhost:3000 --timeout 60000
+          npm run a11y:self

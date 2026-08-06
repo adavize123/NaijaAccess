@@ -1,0 +1,76 @@
+{
+  "targets": [
+    {
+      "slug": "gtbank",
+      "name": "Guaranty Trust Bank",
+      "sector": "banking",
+      "url": "https://www.gtbank.com"
+    },
+    {
+      "slug": "access-bank",
+      "name": "Access Bank",
+      "sector": "banking",
+      "url": "https://www.accessbankplc.com"
+    },
+    {
+      "slug": "uba",
+      "name": "United Bank for Africa",
+      "sector": "banking",
+      "url": "https://www.ubagroup.com"
+    },
+    {
+      "slug": "zenith-bank",
+      "name": "Zenith Bank",
+      "sector": "banking",
+      "url": "https://www.zenithbank.com"
+    },
+    {
+      "slug": "first-bank",
+      "name": "First Bank of Nigeria",
+      "sector": "banking",
+      "url": "https://www.firstbanknigeria.com"
+    },
+    {
+      "slug": "mtn",
+      "name": "MTN Nigeria",
+      "sector": "telecom",
+      "url": "https://www.mtn.ng"
+    },
+    {
+      "slug": "airtel",
+      "name": "Airtel Nigeria",
+      "sector": "telecom",
+      "url": "https://www.airtel.com.ng"
+    },
+    {
+      "slug": "glo",
+      "name": "Globacom",
+      "sector": "telecom",
+      "url": "https://www.gloworld.com"
+    },
+    {
+      "slug": "nimc",
+      "name": "National Identity Management Commission",
+      "sector": "government",
+      "url": "https://nimc.gov.ng"
+    },
+    {
+      "slug": "jamb",
+      "name": "Joint Admissions and Matriculation Board",
+      "sector": "government",
+      "url": "https://www.jamb.gov.ng"
+    },
+    {
+      "slug": "firs",
+      "name": "Federal Inland Revenue Service",
+      "sector": "government",
+      "url": "https://www.firs.gov.ng"
+    },
+    {
+      "slug": "ncc",
+      "name": "Nigerian Communications Commission",
+      "sector": "government",
+      "url": "https://www.ncc.gov.ng"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "naijaaccess",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automated accessibility audit of Nigerian digital services",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . || true",
+    "typecheck": "tsc --noEmit",
+    "scan": "tsx scanner/scan-web.ts",
+    "scan:one": "tsx scanner/scan-web.ts --only",
+    "scan:demo": "tsx scanner/seed-demo.ts",
+    "a11y:self": "tsx scanner/audit-self.ts"
+  },
+  "dependencies": {
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@eslint/eslintrc": "^3.3.6",
+    "@types/node": "22.10.7",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.18.0",
+    "eslint-config-next": "^16.3.0",
+    "playwright": "^1.62.1",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.17",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "wait-on": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_comment": "Tasks attempted by hand by a screen reader user. Automated testing catches roughly a third of WCAG failures, so this file carries the weight the scanner cannot. Replace the examples below with real observations, and delete any entry you have not actually run.",
+  "_schema": {
+    "slug": "must match a slug in scanner/targets.json",
+    "task": "what the person set out to do, in plain words",
+    "completed": "true or false, no partial credit",
+    "notes": "what happened, in the tester's own words where possible",
+    "environment": "screen reader, version, device, browser",
+    "testedAt": "YYYY-MM-DD"
+  },
+  "findings": [
+    {
+      "slug": "REPLACE-ME",
+      "task": "Find the customer service phone number",
+      "completed": false,
+      "notes": "Example entry. Delete this and record what your tester actually observed.",
+      "environment": "TalkBack 14 / Android 13 / Chrome",
+      "testedAt": "2026-08-05"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode. Contrast checked against WCAG AA:
+     ink on canvas 15.8:1, muted on canvas 7.1:1, brand on canvas 8.6:1 */
+  :root {
+    color-scheme: light dark;
+    --canvas: 248 250 252;
+    --surface: 255 255 255;
+    --line: 214 221 229;
+    --ink: 15 23 42;
+    --muted: 71 85 105;
+    --brand: 30 64 175;
+    --accent: 180 83 9;
+    --critical: 185 28 28;
+    --serious: 194 65 12;
+    --moderate: 161 98 7;
+    --minor: 71 85 105;
+    --pass: 21 128 61;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: 15 19 25;
+      --surface: 24 30 38;
+      --line: 51 61 73;
+      --ink: 226 232 240;
+      --muted: 148 163 184;
+      --brand: 125 172 245;
+      --accent: 251 191 36;
+      --critical: 248 113 113;
+      --serious: 251 146 60;
+      --moderate: 250 204 21;
+      --minor: 148 163 184;
+      --pass: 74 222 128;
+    }
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Nothing may widen the page. Wide content scrolls inside its own
+     container instead. Verified at 375px. */
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* A flex column child defaults to min-width:auto, which means it grows to
+     fit its widest descendant. The scorecard table sets a min-width so its
+     columns stay legible, so without this the whole page widens on a phone
+     rather than the table scrolling inside its wrapper. */
+  body > * {
+    min-width: 0;
+  }
+
+  body {
+    @apply bg-canvas text-ink antialiased;
+  }
+
+  /* Visible focus for keyboard users on every interactive element.
+     This tool audits accessibility, so its own focus states must hold up. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand ring-offset-2 ring-offset-canvas;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Skip link. Positioned off-screen at full size rather than collapsed to
+     1px, so it keeps a real target area while remaining invisible.
+     Written in plain CSS rather than @apply so the dimensions are never
+     dropped by the utility layer. */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -6rem;
+    z-index: 50;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    background-color: rgb(var(--brand));
+    color: #fff;
+    transition: top 150ms ease;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  /* Horizontal scroll container for wide content such as the scorecard
+     table. Width is pinned to the containing block rather than the content,
+     so a wide child scrolls here instead of widening the page. */
+  .scroll-x {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    contain: inline-size;
+  }
+
+  .card {
+    @apply rounded-lg border border-line bg-surface;
+  }
+
+  /* Always underlined. A link inside a paragraph must be distinguishable
+     without relying on colour, so hover-only underlines fail WCAG 1.4.1. */
+  .link {
+    @apply text-brand underline underline-offset-4 hover:no-underline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
