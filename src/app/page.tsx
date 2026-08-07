@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getDataset, rankedResults, summarise, formatDate } from '@/lib/data'
 import { ScoreBadge } from '@/components/ScoreBadge'
+import { SectorBars } from '@/components/SectorBars'
 import type { Sector } from '@/lib/types'
 
 const SECTOR_LABEL: Record<Sector, string> = {
@@ -72,30 +73,15 @@ export default function Home() {
           </dl>
 
           {stats.bySector.length > 1 && (
-            <section className="mt-10" aria-labelledby="sector-heading">
-              <h2
-                id="sector-heading"
-                className="text-sm font-semibold uppercase tracking-wide text-muted"
-              >
+            <section className="card mt-10 p-6" aria-labelledby="sector-heading">
+              <h2 id="sector-heading" className="text-lg font-semibold text-ink">
                 Average by sector
               </h2>
-              <div className="mt-3 grid gap-4 sm:grid-cols-3">
-                {stats.bySector.map((s) => (
-                  <div key={s.sector} className="card p-4">
-                    <p className="text-sm text-muted">
-                      {SECTOR_LABEL[s.sector]}
-                    </p>
-                    <p className="mt-1 font-mono text-2xl font-semibold text-ink">
-                      {s.average}
-                      <span className="text-base font-normal text-muted">
-                        /100
-                      </span>
-                    </p>
-                    <p className="mt-1 text-xs text-muted">
-                      {s.count} {s.count === 1 ? 'service' : 'services'}
-                    </p>
-                  </div>
-                ))}
+              <p className="mt-1 text-sm text-muted">
+                Telecom operators already meet a standard the rest do not.
+              </p>
+              <div className="mt-5">
+                <SectorBars data={stats.bySector} />
               </div>
             </section>
           )}
@@ -195,17 +181,68 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="card mt-12 p-6" aria-labelledby="ask-heading">
-        <h2 id="ask-heading" className="text-lg font-semibold text-ink">
+      {/* Why this matters beyond compliance */}
+      <section className="mt-16" aria-labelledby="why-heading">
+        <h2 id="why-heading" className="text-2xl font-semibold text-ink">
+          Why an unlabelled button is an economic problem
+        </h2>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-3">
+          <div className="card p-5">
+            <h3 className="font-semibold text-ink">Fairness</h3>
+            <p className="mt-2 leading-relaxed text-muted">
+              A blind customer pays the same account charges and the same
+              tariffs as everyone else, for a service they cannot fully use.
+              That is a consumer protection question, and consumer protection
+              is squarely within the Commission&rsquo;s remit.
+            </p>
+          </div>
+
+          <div className="card p-5">
+            <h3 className="font-semibold text-ink">Talent</h3>
+            <p className="mt-2 leading-relaxed text-muted">
+              Of roughly 7 million Nigerian children with a disability, UNESCO
+              estimates about 6.69 million are out of school. Those who do
+              qualify then meet application portals they cannot complete. The
+              barrier is rarely ability.
+            </p>
+          </div>
+
+          <div className="card p-5">
+            <h3 className="font-semibold text-ink">Participation</h3>
+            <p className="mt-2 leading-relaxed text-muted">
+              If you cannot use a banking app you cannot run a business. If
+              you cannot finish an online form you cannot register one. Each
+              inaccessible service removes another way to take part in the
+              economy.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-6 max-w-3xl leading-relaxed text-muted">
+          Almost 12 percent of Nigerians aged 15 and over report a disability.
+          Accessibility is usually discussed as a cost. It is more accurately
+          a question of how much of the working population a service is built
+          to exclude.
+        </p>
+      </section>
+
+      {/* The regulatory ask */}
+      <section className="card mt-16 p-6" aria-labelledby="ask-heading">
+        <h2 id="ask-heading" className="text-2xl font-semibold text-ink">
           What this is for
         </h2>
         <p className="mt-3 max-w-3xl leading-relaxed text-muted">
           Under the Nigerian Communications Act 2003, the Commission is
           responsible for ensuring that the needs of people with disabilities
           are taken into account in the provision of communications services.
-          The Consumer Code of Practice Regulations 2024 is in force. What is
-          missing is measurement. This scorecard is built so that compliance
-          can be observed continuously rather than asserted once.
+          The Consumer Code of Practice Regulations 2024 is in force. The
+          legal instruments exist. What is missing is measurement.
+        </p>
+        <p className="mt-4 max-w-3xl leading-relaxed text-ink">
+          This scorecard runs continuously, so compliance can be observed
+          rather than asserted. Attaching accessibility reporting to the
+          Consumer Code would need no new legislation and no new budget.
         </p>
       </section>
     </div>

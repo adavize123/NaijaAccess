@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit results
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name "adavize123"
+          git config user.email "adavize123@users.noreply.github.com"
           git add data/scan-results.json
           if git diff --staged --quiet; then
             echo "No change in scan results"
