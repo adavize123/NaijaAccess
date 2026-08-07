@@ -1,21 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="180" height="180">
   <title>NaijaAccess</title>
 
-  <!-- Rounded square in the brand navy. Solid fill keeps the mark legible
-       at 16px, where an outline would break up. -->
-  <rect width="32" height="32" rx="7" fill="#14304F"/>
+  <!-- Rounded square in the brand navy. Solid fill keeps the mark readable at
+       16px, where an outlined mark breaks up. -->
+  <rect width="180" height="180" rx="7" fill="#14304F"/>
 
-  <!-- The letter N, drawn as three strokes rather than set as type, so it
-       stays crisp at favicon sizes and needs no font to load. -->
-  <path d="M8.5 22.5V9.5l12 12v-12"
+  <!-- An open door, seen from the front: the frame on three sides, and the
+       door itself swung clear to the left so the opening is unobstructed.
+       Access here means a way through that is genuinely open, which is the
+       distinction the scorecard measures. Two shapes, no text, and the
+       silhouette survives being scaled to a favicon. -->
+
+  <!-- Frame: left post, head, right post -->
+  <path d="M8 25V8h16v17"
         fill="none"
         stroke="#FFFFFF"
-        stroke-width="3.2"
+        stroke-width="2.4"
         stroke-linecap="square"
         stroke-linejoin="miter"/>
 
-  <!-- A single braille dot, clear of the letterform. Reads as a full stop at
-       16px and as a deliberate mark at larger sizes. Amber picks up the
-       accent colour used for warnings in the interface. -->
-  <circle cx="24.5" cy="23" r="3.1" fill="#F0A02A"/>
+  <!-- The opening, filled to read as depth rather than outline -->
+  <path d="M14 25V11h10v14z" fill="#FFFFFF" opacity="0.16"/>
+
+  <!-- The door, standing open at an angle -->
+  <path d="M14 11 8 13v12l6-2z"
+        fill="#F0A02A"/>
+
+  <!-- Threshold -->
+  <path d="M5 25h22"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2.4"
+        stroke-linecap="round"/>
 </svg>
