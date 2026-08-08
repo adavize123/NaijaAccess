@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T04:57:56.510Z",
+  "generatedAt": "2026-08-08T04:13:55.318Z",
   "engine": "axe-core 4.10 via @axe-core/playwright",
   "results": [
     {
@@ -7,11 +7,11 @@
       "name": "Guaranty Trust Bank",
       "sector": "banking",
       "url": "https://www.gtbank.com",
-      "scannedAt": "2026-08-07T04:55:45.419Z",
+      "scannedAt": "2026-08-08T04:11:45.716Z",
       "score": 0,
       "counts": {
         "critical": 13,
-        "serious": 80,
+        "serious": 79,
         "moderate": 0,
         "minor": 0
       },
@@ -38,7 +38,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-33m6_m9z-m\" data-toggle=\"tab\" href=\"#personal-33m6_m9z-m\" role=\"tab\" aria-controls=\"personal-33m6_m9z-m\" aria-selected=\"true\""
+          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-zk867pwv3g\" data-toggle=\"tab\" href=\"#personal-zk867pwv3g\" role=\"tab\" aria-controls=\"personal-zk867pwv3g\" aria-selected=\"true\""
         },
         {
           "ruleId": "aria-required-children",
@@ -57,7 +57,7 @@
           "impact": "serious",
           "help": "Elements must meet minimum color contrast ratio thresholds",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
-          "nodeCount": 63,
+          "nodeCount": 62,
           "wcagTags": [
             "wcag2aa",
             "wcag143"
@@ -87,7 +87,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-33m6_m9z-m\" data-toggle=\"tab\" href=\"#personal-33m6_m9z-m\" role=\"tab\" aria-controls=\"personal-33m6_m9z-m\""
+          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-zk867pwv3g\" data-toggle=\"tab\" href=\"#personal-zk867pwv3g\" role=\"tab\" aria-controls=\"personal-zk867pwv3g\""
         },
         {
           "ruleId": "link-in-text-block",
@@ -102,14 +102,14 @@
           "sample": "<a href=\"https://www.gtbank.com/cookie-policy\">Cookie Policy</a>"
         }
       ],
-      "passCount": 29
+      "passCount": 30
     },
     {
       "slug": "access-bank",
       "name": "Access Bank",
       "sector": "banking",
       "url": "https://www.accessbankplc.com",
-      "scannedAt": "2026-08-07T04:55:51.416Z",
+      "scannedAt": "2026-08-08T04:11:51.812Z",
       "score": 0,
       "counts": {
         "critical": 31,
@@ -187,7 +187,7 @@
       "name": "United Bank for Africa",
       "sector": "banking",
       "url": "https://www.ubagroup.com",
-      "scannedAt": "2026-08-07T04:55:59.337Z",
+      "scannedAt": "2026-08-08T04:12:01.223Z",
       "score": 50,
       "counts": {
         "critical": 5,
@@ -216,7 +216,7 @@
       "name": "Zenith Bank",
       "sector": "banking",
       "url": "https://www.zenithbank.com",
-      "scannedAt": "2026-08-07T04:56:06.905Z",
+      "scannedAt": "2026-08-08T04:12:08.635Z",
       "score": 80,
       "counts": {
         "critical": 0,
@@ -235,7 +235,7 @@
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<div class=\"date\">2026-08-07 04:56:07 UTC</div>"
+          "sample": "<div class=\"date\">2026-08-08 04:12:09 UTC</div>"
         },
         {
           "ruleId": "document-title",
@@ -281,7 +281,7 @@
       "name": "First Bank of Nigeria",
       "sector": "banking",
       "url": "https://www.firstbanknigeria.com",
-      "scannedAt": "2026-08-07T04:56:10.770Z",
+      "scannedAt": "2026-08-08T04:12:12.432Z",
       "score": 0,
       "counts": {
         "critical": 0,
@@ -359,11 +359,11 @@
       "name": "MTN Nigeria",
       "sector": "telecom",
       "url": "https://www.mtn.ng",
-      "scannedAt": "2026-08-07T04:56:16.153Z",
-      "score": 75,
+      "scannedAt": "2026-08-08T04:12:17.273Z",
+      "score": 70,
       "counts": {
         "critical": 0,
-        "serious": 5,
+        "serious": 6,
         "moderate": 0,
         "minor": 0
       },
@@ -391,6 +391,18 @@
             "wcag131"
           ],
           "sample": "<ul class=\"menu-items\">"
+        },
+        {
+          "ruleId": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2aa",
+            "wcag143"
+          ],
+          "sample": "<button tabindex=\"0\">Let's chat now</button>"
         }
       ],
       "passCount": 30
@@ -400,7 +412,7 @@
       "name": "Airtel Nigeria",
       "sector": "telecom",
       "url": "https://www.airtel.com.ng",
-      "scannedAt": "2026-08-07T04:56:23.255Z",
+      "scannedAt": "2026-08-08T04:12:30.642Z",
       "score": 98,
       "counts": {
         "critical": 0,
@@ -429,7 +441,7 @@
       "name": "Globacom",
       "sector": "telecom",
       "url": "https://www.gloworld.com",
-      "scannedAt": "2026-08-07T04:56:28.954Z",
+      "scannedAt": "2026-08-08T04:12:36.504Z",
       "score": 90,
       "counts": {
         "critical": 1,
@@ -458,7 +470,7 @@
       "name": "National Identity Management Commission",
       "sector": "government",
       "url": "https://nimc.gov.ng",
-      "scannedAt": "2026-08-07T04:56:32.642Z",
+      "scannedAt": "2026-08-08T04:12:40.040Z",
       "score": 0,
       "counts": {
         "critical": 7,
@@ -535,7 +547,7 @@
       "name": "Joint Admissions and Matriculation Board",
       "sector": "government",
       "url": "https://www.jamb.gov.ng",
-      "scannedAt": "2026-08-07T04:56:38.064Z",
+      "scannedAt": "2026-08-08T04:12:45.471Z",
       "score": 0,
       "counts": {
         "critical": 2,
@@ -625,7 +637,7 @@
       "name": "Federal Inland Revenue Service",
       "sector": "government",
       "url": "https://www.firs.gov.ng",
-      "scannedAt": "2026-08-07T04:57:04.497Z",
+      "scannedAt": "2026-08-08T04:13:03.421Z",
       "score": null,
       "counts": {
         "critical": 0,
@@ -642,7 +654,7 @@
       "name": "Nigerian Communications Commission",
       "sector": "government",
       "url": "https://www.ncc.gov.ng",
-      "scannedAt": "2026-08-07T04:57:49.583Z",
+      "scannedAt": "2026-08-08T04:13:48.475Z",
       "score": 0,
       "counts": {
         "critical": 17,
@@ -661,7 +673,7 @@
             "wcag2a",
             "wcag111"
           ],
-          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1786078672239\">"
+          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1786162431307\">"
         },
         {
           "ruleId": "aria-allowed-attr",
@@ -710,7 +722,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li><div class=\"views-field views-field-title\"><span class=\"field-content\"><a href=\"/media-centre/press-releases/ncc-african-regulators-push-stronger-collaboration-smarter-digital\""
+          "sample": "<li>"
         },
         {
           "ruleId": "target-size",
