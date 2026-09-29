@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T09:29:18.989Z",
+  "generatedAt": "2026-09-29T09:34:28.317Z",
   "engine": "axe-core 4.10 via @axe-core/playwright",
   "results": [
     {
@@ -7,11 +7,11 @@
       "name": "Guaranty Trust Bank",
       "sector": "banking",
       "url": "https://www.gtbank.com",
-      "scannedAt": "2026-09-28T09:26:57.797Z",
+      "scannedAt": "2026-09-29T09:32:12.762Z",
       "score": 0,
       "counts": {
         "critical": 14,
-        "serious": 72,
+        "serious": 71,
         "moderate": 0,
         "minor": 0
       },
@@ -38,7 +38,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-i0ngk8-ze8\" data-toggle=\"tab\" href=\"#personal-i0ngk8-ze8\" role=\"tab\" aria-controls=\"personal-i0ngk8-ze8\" aria-selected=\"true\""
+          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-_8_9mtyth4\" data-toggle=\"tab\" href=\"#personal-_8_9mtyth4\" role=\"tab\" aria-controls=\"personal-_8_9mtyth4\" aria-selected=\"true\""
         },
         {
           "ruleId": "aria-required-children",
@@ -57,7 +57,7 @@
           "impact": "serious",
           "help": "Elements must meet minimum color contrast ratio thresholds",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
-          "nodeCount": 56,
+          "nodeCount": 55,
           "wcagTags": [
             "wcag2aa",
             "wcag143"
@@ -87,7 +87,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-i0ngk8-ze8\" data-toggle=\"tab\" href=\"#personal-i0ngk8-ze8\" role=\"tab\" aria-controls=\"personal-i0ngk8-ze8\""
+          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-_8_9mtyth4\" data-toggle=\"tab\" href=\"#personal-_8_9mtyth4\" role=\"tab\" aria-controls=\"personal-_8_9mtyth4\""
         }
       ],
       "passCount": 31
@@ -97,7 +97,7 @@
       "name": "Access Bank",
       "sector": "banking",
       "url": "https://www.accessbankplc.com",
-      "scannedAt": "2026-09-28T09:27:04.272Z",
+      "scannedAt": "2026-09-29T09:32:19.422Z",
       "score": 0,
       "counts": {
         "critical": 31,
@@ -175,7 +175,7 @@
       "name": "United Bank for Africa",
       "sector": "banking",
       "url": "https://www.ubagroup.com",
-      "scannedAt": "2026-09-28T09:27:13.731Z",
+      "scannedAt": "2026-09-29T09:32:28.052Z",
       "score": 40,
       "counts": {
         "critical": 5,
@@ -222,14 +222,14 @@
           "sample": "<a href=\"https://www.ubagroup.com\">\n\t\t\t<img width=\"181\" height=\"100\" src=\"https://www.ubagroup.com/wp-content/uploads/2022/03/UBA-Logo.webp\" class=\"attachment-full size-full wp-ima"
         }
       ],
-      "passCount": 32
+      "passCount": 29
     },
     {
       "slug": "zenith-bank",
       "name": "Zenith Bank",
       "sector": "banking",
       "url": "https://www.zenithbank.com",
-      "scannedAt": "2026-09-28T09:27:21.674Z",
+      "scannedAt": "2026-09-29T09:32:36.617Z",
       "score": 80,
       "counts": {
         "critical": 0,
@@ -248,7 +248,7 @@
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<div class=\"date\">2026-09-28 09:27:22 UTC</div>"
+          "sample": "<div class=\"date\">2026-09-29 09:32:37 UTC</div>"
         },
         {
           "ruleId": "document-title",
@@ -294,7 +294,7 @@
       "name": "First Bank of Nigeria",
       "sector": "banking",
       "url": "https://www.firstbanknigeria.com",
-      "scannedAt": "2026-09-28T09:27:25.836Z",
+      "scannedAt": "2026-09-29T09:32:40.648Z",
       "score": 10,
       "counts": {
         "critical": 0,
@@ -360,7 +360,7 @@
       "name": "MTN Nigeria",
       "sector": "telecom",
       "url": "https://www.mtn.ng",
-      "scannedAt": "2026-09-28T09:27:32.565Z",
+      "scannedAt": "2026-09-29T09:32:47.093Z",
       "score": 75,
       "counts": {
         "critical": 0,
@@ -401,7 +401,7 @@
       "name": "Airtel Nigeria",
       "sector": "telecom",
       "url": "https://www.airtel.com.ng",
-      "scannedAt": "2026-09-28T09:27:40.641Z",
+      "scannedAt": "2026-09-29T09:32:54.643Z",
       "score": 98,
       "counts": {
         "critical": 0,
@@ -430,7 +430,7 @@
       "name": "Globacom",
       "sector": "telecom",
       "url": "https://www.gloworld.com",
-      "scannedAt": "2026-09-28T09:27:46.895Z",
+      "scannedAt": "2026-09-29T09:33:01.304Z",
       "score": 90,
       "counts": {
         "critical": 1,
@@ -459,7 +459,7 @@
       "name": "National Identity Management Commission",
       "sector": "government",
       "url": "https://nimc.gov.ng",
-      "scannedAt": "2026-09-28T09:27:50.544Z",
+      "scannedAt": "2026-09-29T09:33:04.989Z",
       "score": 0,
       "counts": {
         "critical": 7,
@@ -536,7 +536,7 @@
       "name": "Joint Admissions and Matriculation Board",
       "sector": "government",
       "url": "https://www.jamb.gov.ng",
-      "scannedAt": "2026-09-28T09:27:56.807Z",
+      "scannedAt": "2026-09-29T09:33:11.016Z",
       "score": 0,
       "counts": {
         "critical": 2,
@@ -626,7 +626,7 @@
       "name": "Federal Inland Revenue Service",
       "sector": "government",
       "url": "https://www.firs.gov.ng",
-      "scannedAt": "2026-09-28T09:28:26.666Z",
+      "scannedAt": "2026-09-29T09:33:35.702Z",
       "score": null,
       "counts": {
         "critical": 0,
@@ -643,7 +643,7 @@
       "name": "Nigerian Communications Commission",
       "sector": "government",
       "url": "https://www.ncc.gov.ng",
-      "scannedAt": "2026-09-28T09:29:11.754Z",
+      "scannedAt": "2026-09-29T09:34:20.787Z",
       "score": 0,
       "counts": {
         "critical": 18,
@@ -662,7 +662,7 @@
             "wcag2a",
             "wcag111"
           ],
-          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1790587754726\">"
+          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1790674464029\">"
         },
         {
           "ruleId": "aria-allowed-attr",
