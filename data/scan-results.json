@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T08:17:56.396Z",
+  "generatedAt": "2026-10-21T08:22:47.572Z",
   "engine": "axe-core 4.10 via @axe-core/playwright",
   "results": [
     {
@@ -7,7 +7,7 @@
       "name": "Guaranty Trust Bank",
       "sector": "banking",
       "url": "https://www.gtbank.com",
-      "scannedAt": "2026-10-20T08:15:18.283Z",
+      "scannedAt": "2026-10-21T08:20:07.480Z",
       "score": 0,
       "counts": {
         "critical": 14,
@@ -38,7 +38,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-h3rqotnw-m\" data-toggle=\"tab\" href=\"#personal-h3rqotnw-m\" role=\"tab\" aria-controls=\"personal-h3rqotnw-m\" aria-selected=\"true\""
+          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-ael209zbsv\" data-toggle=\"tab\" href=\"#personal-ael209zbsv\" role=\"tab\" aria-controls=\"personal-ael209zbsv\" aria-selected=\"true\""
         },
         {
           "ruleId": "aria-required-children",
@@ -87,7 +87,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-h3rqotnw-m\" data-toggle=\"tab\" href=\"#personal-h3rqotnw-m\" role=\"tab\" aria-controls=\"personal-h3rqotnw-m\""
+          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-ael209zbsv\" data-toggle=\"tab\" href=\"#personal-ael209zbsv\" role=\"tab\" aria-controls=\"personal-ael209zbsv\""
         }
       ],
       "passCount": 31
@@ -97,7 +97,7 @@
       "name": "Access Bank",
       "sector": "banking",
       "url": "https://www.accessbankplc.com",
-      "scannedAt": "2026-10-20T08:15:24.235Z",
+      "scannedAt": "2026-10-21T08:20:14.292Z",
       "score": 0,
       "counts": {
         "critical": 31,
@@ -175,7 +175,7 @@
       "name": "United Bank for Africa",
       "sector": "banking",
       "url": "https://www.ubagroup.com",
-      "scannedAt": "2026-10-20T08:15:31.880Z",
+      "scannedAt": "2026-10-21T08:20:22.400Z",
       "score": 40,
       "counts": {
         "critical": 5,
@@ -229,7 +229,7 @@
       "name": "Zenith Bank",
       "sector": "banking",
       "url": "https://www.zenithbank.com",
-      "scannedAt": "2026-10-20T08:15:39.368Z",
+      "scannedAt": "2026-10-21T08:20:30.472Z",
       "score": 80,
       "counts": {
         "critical": 0,
@@ -248,7 +248,7 @@
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<div class=\"date\">2026-10-20 08:15:39 UTC</div>"
+          "sample": "<div class=\"date\">2026-10-21 08:20:31 UTC</div>"
         },
         {
           "ruleId": "document-title",
@@ -294,7 +294,7 @@
       "name": "First Bank of Nigeria",
       "sector": "banking",
       "url": "https://www.firstbanknigeria.com",
-      "scannedAt": "2026-10-20T08:15:43.364Z",
+      "scannedAt": "2026-10-21T08:20:34.579Z",
       "score": 0,
       "counts": {
         "critical": 0,
@@ -360,7 +360,7 @@
       "name": "MTN Nigeria",
       "sector": "telecom",
       "url": "https://www.mtn.ng",
-      "scannedAt": "2026-10-20T08:15:49.528Z",
+      "scannedAt": "2026-10-21T08:20:41.624Z",
       "score": 75,
       "counts": {
         "critical": 0,
@@ -401,7 +401,7 @@
       "name": "Airtel Nigeria",
       "sector": "telecom",
       "url": "https://www.airtel.com.ng",
-      "scannedAt": "2026-10-20T08:15:57.138Z",
+      "scannedAt": "2026-10-21T08:20:49.869Z",
       "score": 98,
       "counts": {
         "critical": 0,
@@ -430,7 +430,7 @@
       "name": "Globacom",
       "sector": "telecom",
       "url": "https://www.gloworld.com",
-      "scannedAt": "2026-10-20T08:16:05.175Z",
+      "scannedAt": "2026-10-21T08:20:55.807Z",
       "score": 15,
       "counts": {
         "critical": 2,
@@ -495,7 +495,7 @@
       "name": "National Identity Management Commission",
       "sector": "government",
       "url": "https://nimc.gov.ng",
-      "scannedAt": "2026-10-20T08:16:14.194Z",
+      "scannedAt": "2026-10-21T08:21:06.676Z",
       "score": 0,
       "counts": {
         "critical": 7,
@@ -572,24 +572,97 @@
       "name": "Joint Admissions and Matriculation Board",
       "sector": "government",
       "url": "https://www.jamb.gov.ng",
-      "scannedAt": "2026-10-20T08:16:19.469Z",
-      "score": null,
+      "scannedAt": "2026-10-21T08:21:12.295Z",
+      "score": 0,
       "counts": {
-        "critical": 0,
-        "serious": 0,
+        "critical": 2,
+        "serious": 24,
         "moderate": 0,
         "minor": 0
       },
-      "violations": [],
-      "passCount": 0,
-      "error": "page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.jamb.gov.ng/\", waiting until \"domcontentloaded\"\n"
+      "violations": [
+        {
+          "ruleId": "aria-required-children",
+          "impact": "critical",
+          "help": "Certain ARIA roles must contain particular children",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag131"
+          ],
+          "sample": "<div class=\"carousel-inner\" role=\"listbox\">"
+        },
+        {
+          "ruleId": "image-alt",
+          "impact": "critical",
+          "help": "Images must have alternative text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag111"
+          ],
+          "sample": "<img src=\"../img/chat_Us.png\">"
+        },
+        {
+          "ruleId": "link-name",
+          "impact": "serious",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+          "nodeCount": 21,
+          "wcagTags": [
+            "wcag2a",
+            "wcag244",
+            "wcag412"
+          ],
+          "sample": "<a class=\"btn default btn-outline\" href=\"pdfs/2026/Letter to Provosts on Special waiver.pdf\" target=\"_self\">\n      <i class=\"icon-globe\"></i>\n       </a>"
+        },
+        {
+          "ruleId": "aria-input-field-name",
+          "impact": "serious",
+          "help": "ARIA input fields must have an accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-input-field-name?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag412"
+          ],
+          "sample": "<div class=\"carousel-inner\" role=\"listbox\">"
+        },
+        {
+          "ruleId": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2aa",
+            "wcag143"
+          ],
+          "sample": "<button type=\"button\" class=\"btn btn-info btn-lg\" onclick=\"window.location.href = 'bulletins.aspx';\"> Subscribe to JAMBulletin </button>"
+        },
+        {
+          "ruleId": "link-in-text-block",
+          "impact": "serious",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag141"
+          ],
+          "sample": "<a href=\"Registrar_CE.aspx\" style=\"color: red\">...read more</a>"
+        }
+      ],
+      "passCount": 19
     },
     {
       "slug": "firs",
       "name": "Federal Inland Revenue Service",
       "sector": "government",
       "url": "https://www.firs.gov.ng",
-      "scannedAt": "2026-10-20T08:17:04.518Z",
+      "scannedAt": "2026-10-21T08:21:53.705Z",
       "score": null,
       "counts": {
         "critical": 0,
@@ -606,11 +679,11 @@
       "name": "Nigerian Communications Commission",
       "sector": "government",
       "url": "https://www.ncc.gov.ng",
-      "scannedAt": "2026-10-20T08:17:49.603Z",
+      "scannedAt": "2026-10-21T08:22:38.799Z",
       "score": 0,
       "counts": {
         "critical": 18,
-        "serious": 47,
+        "serious": 48,
         "moderate": 0,
         "minor": 0
       },
@@ -625,7 +698,7 @@
             "wcag2a",
             "wcag111"
           ],
-          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1792484272123\">"
+          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1792570963230\">"
         },
         {
           "ruleId": "aria-allowed-attr",
@@ -644,13 +717,13 @@
           "impact": "serious",
           "help": "Links must have discernible text",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
-          "nodeCount": 39,
+          "nodeCount": 40,
           "wcagTags": [
             "wcag2a",
             "wcag244",
             "wcag412"
           ],
-          "sample": "<a href=\"/media-centre/press-releases\">\n</a>"
+          "sample": "<a href=\"https://uptime.com/statuspage/ncc\" target=\"_blank\" rel=\"noopener noreferrer\"></a>"
         },
         {
           "ruleId": "list",
