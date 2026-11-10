@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T11:01:53.684Z",
+  "generatedAt": "2026-11-10T10:53:29.050Z",
   "engine": "axe-core 4.10 via @axe-core/playwright",
   "results": [
     {
@@ -7,7 +7,7 @@
       "name": "Guaranty Trust Bank",
       "sector": "banking",
       "url": "https://www.gtbank.com",
-      "scannedAt": "2026-11-09T10:59:28.615Z",
+      "scannedAt": "2026-11-10T10:51:04.487Z",
       "score": 0,
       "counts": {
         "critical": 14,
@@ -38,7 +38,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-g9ql__ntin\" data-toggle=\"tab\" href=\"#personal-g9ql__ntin\" role=\"tab\" aria-controls=\"personal-g9ql__ntin\" aria-selected=\"true\""
+          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-t0ec4meemh\" data-toggle=\"tab\" href=\"#personal-t0ec4meemh\" role=\"tab\" aria-controls=\"personal-t0ec4meemh\" aria-selected=\"true\""
         },
         {
           "ruleId": "aria-required-children",
@@ -87,7 +87,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-g9ql__ntin\" data-toggle=\"tab\" href=\"#personal-g9ql__ntin\" role=\"tab\" aria-controls=\"personal-g9ql__ntin\""
+          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-t0ec4meemh\" data-toggle=\"tab\" href=\"#personal-t0ec4meemh\" role=\"tab\" aria-controls=\"personal-t0ec4meemh\""
         }
       ],
       "passCount": 31
@@ -97,7 +97,7 @@
       "name": "Access Bank",
       "sector": "banking",
       "url": "https://www.accessbankplc.com",
-      "scannedAt": "2026-11-09T10:59:34.613Z",
+      "scannedAt": "2026-11-10T10:51:10.494Z",
       "score": 0,
       "counts": {
         "critical": 31,
@@ -175,7 +175,7 @@
       "name": "United Bank for Africa",
       "sector": "banking",
       "url": "https://www.ubagroup.com",
-      "scannedAt": "2026-11-09T10:59:41.285Z",
+      "scannedAt": "2026-11-10T10:51:17.639Z",
       "score": 45,
       "counts": {
         "critical": 5,
@@ -217,7 +217,7 @@
       "name": "Zenith Bank",
       "sector": "banking",
       "url": "https://www.zenithbank.com",
-      "scannedAt": "2026-11-09T10:59:50.236Z",
+      "scannedAt": "2026-11-10T10:51:26.615Z",
       "score": 80,
       "counts": {
         "critical": 0,
@@ -236,7 +236,7 @@
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<div class=\"date\">2026-11-09 10:59:50 UTC</div>"
+          "sample": "<div class=\"date\">2026-11-10 10:51:26 UTC</div>"
         },
         {
           "ruleId": "document-title",
@@ -282,7 +282,7 @@
       "name": "First Bank of Nigeria",
       "sector": "banking",
       "url": "https://www.firstbanknigeria.com",
-      "scannedAt": "2026-11-09T10:59:54.191Z",
+      "scannedAt": "2026-11-10T10:51:30.535Z",
       "score": 5,
       "counts": {
         "critical": 0,
@@ -348,7 +348,7 @@
       "name": "MTN Nigeria",
       "sector": "telecom",
       "url": "https://www.mtn.ng",
-      "scannedAt": "2026-11-09T11:00:00.975Z",
+      "scannedAt": "2026-11-10T10:51:38.954Z",
       "score": 75,
       "counts": {
         "critical": 0,
@@ -389,15 +389,76 @@
       "name": "Airtel Nigeria",
       "sector": "telecom",
       "url": "https://www.airtel.com.ng",
-      "scannedAt": "2026-11-09T11:00:12.168Z",
-      "score": 98,
+      "scannedAt": "2026-11-10T10:51:46.145Z",
+      "score": 3,
       "counts": {
-        "critical": 0,
-        "serious": 0,
+        "critical": 6,
+        "serious": 7,
         "moderate": 1,
         "minor": 0
       },
       "violations": [
+        {
+          "ruleId": "button-name",
+          "impact": "critical",
+          "help": "Buttons must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright",
+          "nodeCount": 5,
+          "wcagTags": [
+            "wcag2a",
+            "wcag412"
+          ],
+          "sample": "<button class=\"Carousel_activeDot__iuIZT\"></button>"
+        },
+        {
+          "ruleId": "image-alt",
+          "impact": "critical",
+          "help": "Images must have alternative text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag111"
+          ],
+          "sample": "<img src=\"https://cdn-webportal.airtelstream.net/website/nigeria/assets/icons/paper_icon.svg\">"
+        },
+        {
+          "ruleId": "link-name",
+          "impact": "serious",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+          "nodeCount": 3,
+          "wcagTags": [
+            "wcag2a",
+            "wcag244",
+            "wcag412"
+          ],
+          "sample": "<a class=\"AirtelMoneyService_btn-readmore__1NLff\" href=\"/ng/personal/airtel-premier-benefits\"><i class=\"fas fa-arrow-right\"></i></a>"
+        },
+        {
+          "ruleId": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+          "nodeCount": 2,
+          "wcagTags": [
+            "wcag2aa",
+            "wcag143"
+          ],
+          "sample": "<span>Get connected now</span>"
+        },
+        {
+          "ruleId": "target-size",
+          "impact": "serious",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+          "nodeCount": 2,
+          "wcagTags": [
+            "wcag22aa",
+            "wcag258"
+          ],
+          "sample": "<a href=\"/ng/about/careers\">Careers at Airtel</a>"
+        },
         {
           "ruleId": "meta-viewport",
           "impact": "moderate",
@@ -411,68 +472,79 @@
           "sample": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\">"
         }
       ],
-      "passCount": 5
+      "passCount": 20
     },
     {
       "slug": "glo",
       "name": "Globacom",
       "sector": "telecom",
       "url": "https://www.gloworld.com",
-      "scannedAt": "2026-11-09T11:00:17.593Z",
-      "score": 45,
+      "scannedAt": "2026-11-10T10:51:51.998Z",
+      "score": 15,
       "counts": {
-        "critical": 0,
-        "serious": 11,
+        "critical": 2,
+        "serious": 13,
         "moderate": 0,
         "minor": 0
       },
       "violations": [
         {
+          "ruleId": "button-name",
+          "impact": "critical",
+          "help": "Buttons must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag412"
+          ],
+          "sample": "<button type=\"button\" class=\"btn btn-primary btn-nav-action btn-chat btn-blink \"><i class=\"icon-thewave icon-comment-white\"></i></button>"
+        },
+        {
+          "ruleId": "image-alt",
+          "impact": "critical",
+          "help": "Images must have alternative text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+          "nodeCount": 1,
+          "wcagTags": [
+            "wcag2a",
+            "wcag111"
+          ],
+          "sample": "<img class=\"nav-agent hide-loader\" src=\"https://hermespub.gloworld.com/hermes360/PlateformPublication/WebSitesLiveChat/Commun/TheWave/3677976437C6F634_cyG1GAEK/TheNewWave/AgentOnli"
+        },
+        {
           "ruleId": "color-contrast",
           "impact": "serious",
           "help": "Elements must meet minimum color contrast ratio thresholds",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
-          "nodeCount": 6,
+          "nodeCount": 10,
           "wcagTags": [
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_525&amp;utm_campaign=www.gloworld.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a>"
+          "sample": "<h2 class=\"text-center text-primary text-uppercase mb-4\">Quick Services</h2>"
         },
         {
-          "ruleId": "link-in-text-block",
+          "ruleId": "target-size",
           "impact": "serious",
-          "help": "Links must be distinguishable without relying on color",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
-          "nodeCount": 4,
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+          "nodeCount": 3,
           "wcagTags": [
-            "wcag2a",
-            "wcag141"
+            "wcag22aa",
+            "wcag258"
           ],
-          "sample": "<a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_525&amp;utm_campaign=www.gloworld.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a>"
-        },
-        {
-          "ruleId": "link-name",
-          "impact": "serious",
-          "help": "Links must have discernible text",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
-          "nodeCount": 1,
-          "wcagTags": [
-            "wcag2a",
-            "wcag244",
-            "wcag412"
-          ],
-          "sample": "<a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_525&utm_campaign=www.gloworld.com\" target=\"_blank\" rel=\"noopener noreferrer\">"
+          "sample": "<input type=\"tel\" id=\"phone_number\" name=\"phone_number\" placeholder=\"Glo Phone Number\" class=\"form-control form-control-quick-topup\" aria-required=\"true\" aria-invalid=\"false\">"
         }
       ],
-      "passCount": 13
+      "passCount": 29
     },
     {
       "slug": "nimc",
       "name": "National Identity Management Commission",
       "sector": "government",
       "url": "https://nimc.gov.ng",
-      "scannedAt": "2026-11-09T11:00:21.680Z",
+      "scannedAt": "2026-11-10T10:52:00.951Z",
       "score": 0,
       "counts": {
         "critical": 7,
@@ -549,7 +621,7 @@
       "name": "Joint Admissions and Matriculation Board",
       "sector": "government",
       "url": "https://www.jamb.gov.ng",
-      "scannedAt": "2026-11-09T11:00:28.929Z",
+      "scannedAt": "2026-11-10T10:52:09.212Z",
       "score": 0,
       "counts": {
         "critical": 2,
@@ -639,7 +711,7 @@
       "name": "Federal Inland Revenue Service",
       "sector": "government",
       "url": "https://www.firs.gov.ng",
-      "scannedAt": "2026-11-09T11:01:00.897Z",
+      "scannedAt": "2026-11-10T10:52:37.312Z",
       "score": null,
       "counts": {
         "critical": 0,
@@ -656,11 +728,11 @@
       "name": "Nigerian Communications Commission",
       "sector": "government",
       "url": "https://www.ncc.gov.ng",
-      "scannedAt": "2026-11-09T11:01:45.945Z",
+      "scannedAt": "2026-11-10T10:53:22.402Z",
       "score": 0,
       "counts": {
         "critical": 18,
-        "serious": 47,
+        "serious": 48,
         "moderate": 0,
         "minor": 0
       },
@@ -675,7 +747,7 @@
             "wcag2a",
             "wcag111"
           ],
-          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1794222109563\">"
+          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1794308004757\">"
         },
         {
           "ruleId": "aria-allowed-attr",
@@ -694,13 +766,13 @@
           "impact": "serious",
           "help": "Links must have discernible text",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
-          "nodeCount": 39,
+          "nodeCount": 40,
           "wcagTags": [
             "wcag2a",
             "wcag244",
             "wcag412"
           ],
-          "sample": "<a href=\"/media-centre/press-releases\">\n</a>"
+          "sample": "<a href=\"https://uptime.com/statuspage/ncc\" target=\"_blank\" rel=\"noopener noreferrer\"></a>"
         },
         {
           "ruleId": "list",
