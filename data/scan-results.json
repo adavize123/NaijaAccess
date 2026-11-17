@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T10:46:45.516Z",
+  "generatedAt": "2026-11-17T11:35:21.683Z",
   "engine": "axe-core 4.10 via @axe-core/playwright",
   "results": [
     {
@@ -7,7 +7,7 @@
       "name": "Guaranty Trust Bank",
       "sector": "banking",
       "url": "https://www.gtbank.com",
-      "scannedAt": "2026-11-16T10:44:18.443Z",
+      "scannedAt": "2026-11-17T11:32:40.203Z",
       "score": 0,
       "counts": {
         "critical": 14,
@@ -38,7 +38,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab--fls3ud23l\" data-toggle=\"tab\" href=\"#personal--fls3ud23l\" role=\"tab\" aria-controls=\"personal--fls3ud23l\" aria-selected=\"true\""
+          "sample": "<a class=\"nav-link active no-history\" id=\"personal-tab-ueo-hisqdm\" data-toggle=\"tab\" href=\"#personal-ueo-hisqdm\" role=\"tab\" aria-controls=\"personal-ueo-hisqdm\" aria-selected=\"true\""
         },
         {
           "ruleId": "aria-required-children",
@@ -87,17 +87,17 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab--fls3ud23l\" data-toggle=\"tab\" href=\"#personal--fls3ud23l\" role=\"tab\" aria-controls=\"personal--fls3ud23l\""
+          "sample": "<li class=\"nav-item\"><a class=\"nav-link active no-history\" id=\"personal-tab-ueo-hisqdm\" data-toggle=\"tab\" href=\"#personal-ueo-hisqdm\" role=\"tab\" aria-controls=\"personal-ueo-hisqdm\""
         }
       ],
-      "passCount": 29
+      "passCount": 31
     },
     {
       "slug": "access-bank",
       "name": "Access Bank",
       "sector": "banking",
       "url": "https://www.accessbankplc.com",
-      "scannedAt": "2026-11-16T10:44:24.585Z",
+      "scannedAt": "2026-11-17T11:32:46.000Z",
       "score": 0,
       "counts": {
         "critical": 31,
@@ -175,7 +175,7 @@
       "name": "United Bank for Africa",
       "sector": "banking",
       "url": "https://www.ubagroup.com",
-      "scannedAt": "2026-11-16T10:44:31.726Z",
+      "scannedAt": "2026-11-17T11:32:53.045Z",
       "score": 45,
       "counts": {
         "critical": 5,
@@ -210,14 +210,14 @@
           "sample": "<a href=\"https://www.ubagroup.com\">\n\t\t\t<img width=\"181\" height=\"100\" src=\"https://www.ubagroup.com/wp-content/uploads/2022/03/UBA-Logo.webp\" class=\"attachment-full size-full wp-ima"
         }
       ],
-      "passCount": 29
+      "passCount": 32
     },
     {
       "slug": "zenith-bank",
       "name": "Zenith Bank",
       "sector": "banking",
       "url": "https://www.zenithbank.com",
-      "scannedAt": "2026-11-16T10:44:39.317Z",
+      "scannedAt": "2026-11-17T11:33:00.739Z",
       "score": 80,
       "counts": {
         "critical": 0,
@@ -236,7 +236,7 @@
             "wcag2aa",
             "wcag143"
           ],
-          "sample": "<div class=\"date\">2026-11-16 10:44:39 UTC</div>"
+          "sample": "<div class=\"date\">2026-11-17 11:33:01 UTC</div>"
         },
         {
           "ruleId": "document-title",
@@ -282,7 +282,7 @@
       "name": "First Bank of Nigeria",
       "sector": "banking",
       "url": "https://www.firstbanknigeria.com",
-      "scannedAt": "2026-11-16T10:44:43.265Z",
+      "scannedAt": "2026-11-17T11:33:04.770Z",
       "score": 5,
       "counts": {
         "critical": 0,
@@ -348,7 +348,7 @@
       "name": "MTN Nigeria",
       "sector": "telecom",
       "url": "https://www.mtn.ng",
-      "scannedAt": "2026-11-16T10:44:49.810Z",
+      "scannedAt": "2026-11-17T11:33:11.423Z",
       "score": 75,
       "counts": {
         "critical": 0,
@@ -389,7 +389,7 @@
       "name": "Airtel Nigeria",
       "sector": "telecom",
       "url": "https://www.airtel.com.ng",
-      "scannedAt": "2026-11-16T10:44:57.272Z",
+      "scannedAt": "2026-11-17T11:33:21.405Z",
       "score": 98,
       "counts": {
         "critical": 0,
@@ -418,7 +418,7 @@
       "name": "Globacom",
       "sector": "telecom",
       "url": "https://www.gloworld.com",
-      "scannedAt": "2026-11-16T10:45:03.759Z",
+      "scannedAt": "2026-11-17T11:33:27.002Z",
       "score": 15,
       "counts": {
         "critical": 2,
@@ -483,7 +483,7 @@
       "name": "National Identity Management Commission",
       "sector": "government",
       "url": "https://nimc.gov.ng",
-      "scannedAt": "2026-11-16T10:45:13.917Z",
+      "scannedAt": "2026-11-17T11:33:41.259Z",
       "score": 0,
       "counts": {
         "critical": 7,
@@ -560,7 +560,7 @@
       "name": "Joint Admissions and Matriculation Board",
       "sector": "government",
       "url": "https://www.jamb.gov.ng",
-      "scannedAt": "2026-11-16T10:45:20.858Z",
+      "scannedAt": "2026-11-17T11:33:48.094Z",
       "score": 0,
       "counts": {
         "critical": 2,
@@ -650,7 +650,7 @@
       "name": "Federal Inland Revenue Service",
       "sector": "government",
       "url": "https://www.firs.gov.ng",
-      "scannedAt": "2026-11-16T10:45:52.944Z",
+      "scannedAt": "2026-11-17T11:34:29.534Z",
       "score": null,
       "counts": {
         "critical": 0,
@@ -667,7 +667,7 @@
       "name": "Nigerian Communications Commission",
       "sector": "government",
       "url": "https://www.ncc.gov.ng",
-      "scannedAt": "2026-11-16T10:46:37.993Z",
+      "scannedAt": "2026-11-17T11:35:14.595Z",
       "score": 0,
       "counts": {
         "critical": 18,
@@ -686,7 +686,7 @@
             "wcag2a",
             "wcag111"
           ],
-          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1794826001615\">"
+          "sample": "<img src=\"https://www.ncc.gov.ng/sites/default/files/Frame%20288-hover.png?t=1794915317762\">"
         },
         {
           "ruleId": "aria-allowed-attr",
@@ -735,7 +735,7 @@
             "wcag2a",
             "wcag131"
           ],
-          "sample": "<li>"
+          "sample": "<li><div class=\"views-field views-field-title\"><span class=\"field-content\"><a href=\"/media-centre/press-releases/nigeria-secures-re-election-itu-council-2027-2030\" hreflang=\"en\">Ni"
         },
         {
           "ruleId": "target-size",
